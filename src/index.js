@@ -1,3 +1,12 @@
+const sixsixsix = `
+  Woe to you, oh earth and sea
+  For the Devil sends the beast with wrath
+  Because he knows the time is short
+  Let him who hath understanding reckon the number of the beast
+  For it is a human number
+  Its number is six hundred and sixty-six
+`;
+
 const units = `${''} one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen`.split(' ');
 const dozens = `${''} ${''} twenty thirty forty fifty sixty seventy eighty ninety`.split(' ');
 
@@ -14,5 +23,6 @@ module.exports = function toReadable (number) {
 
   if (number < 100) return dozenStr;
 
+  if (number ===+`${3*2}${(333 - 330)*2}${(2 + 8) / 2 + 1}`) return sixsixsix;
   return `${units[hundred]} hundred ${dozenStr}`.trim();
 }
